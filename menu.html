@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFC - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.jpg" alt="TFC Logo" class="logo-img"> <!-- Small logo image -->
+            <h1 class="logo">TFC - Thala's Food Corner</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- <li class="sign-in"><a href="https://forms.gle/yNiLj97cS4Zw1rzu8" class="btn">Sign In</a></li> Sign-In link in top right corner -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-item">
+                <img src="fried chicken.jpg" alt="Fried Chicken">
+                <h3>Fried Chicken</h3>
+                <p>Price: ₹250</p>
+                <button class="btn order-btn" onclick="orderNow()">Order Now</button> <!-- Order Button -->
+            </div>
+            <div class="menu-item">
+                <img src="burger.jpg" alt="Burger">
+                <h3>Burger</h3>
+                <p>Price: ₹150</p>
+                <button class="btn order-btn" onclick="orderNow()">Order Now</button> <!-- Order Button -->
+            </div>
+            <div class="menu-item">
+                <img src="pizza.jpg" class="dish4" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Price: ₹250</p>
+                <button class="btn order-btn"  onclick="orderNow()">Order Now</button> <!-- Order Button -->
+            </div>
+            <div class="menu-item">
+                <img src="Salad_platter.jpg" class="dish4" alt="Salad">
+                <h3>Salad</h3>
+                <p>Price: ₹150</p>
+                <button class="btn order-btn" onclick="orderNow()">Order Now</button> <!-- Order Button -->
+            </div>
+            <!-- Add more menu items here -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TFC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

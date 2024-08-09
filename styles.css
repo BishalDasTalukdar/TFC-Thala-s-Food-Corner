@@ -1,0 +1,179 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #FFD700; /* Yellow */
+    color: #581cee;
+    padding: 20px 0;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    font-family:'Times New Roman', Times, serif;
+    font-size:large;
+}
+
+header .logo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo-img{
+width: 70px;
+height: 70px;
+}
+header nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ff0000; /* Red font color */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #ffcccb; /* Light pink hover effect */
+}
+
+#hero {
+    background: url('360_F_418756197_6EHD60bdCTkNODjZUryqNvIUox33TOTQ.jpg') no-repeat center center/cover;
+    color: #f706be;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hero .btn {
+    background-color: #f5d7b2; /* Skin color */
+    color: #ff0000; /* Red font color */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#hero .btn:hover {
+    background-color: #ffcccb; /* Light pink */
+    color: #fff;
+}
+
+#services, #testimonials, #menu {
+    padding: 50px 0;
+    background-color: #79eb82;
+}
+
+#services .service-box, #testimonials .testimonial-box, .menu-item {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f5d7b2; /* Skin color */
+    color: #ff0000; /* Red font color */
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.dish4{
+    height: 200px;
+    width: 200px;
+}
+#payment{
+    flex-wrap: inherit;
+    display: flex;
+    justify-content: center;
+}
+.scanner-img{
+    height: 350px;
+    width: 350px;
+
+}
+#services .service-box:hover, #testimonials .testimonial-box:hover, .menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+.order-btn{
+    color: red;
+    background-color: yellow;
+    border: #FFD700;
+    border-radius: 2px;
+}
+#contact{
+    background-color: #f7c06d;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* Sign-In Link Styling */
+.sign-in {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.sign-in .btn {
+    background-color: #ff0000; /* Red */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sign-in .btn:hover {
+    background-color: #ffcccb; /* Light pink */
+    color: #fff;
+}
+
+/* Footer at Bottom */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Contact Page Specific */
+#contact {
+    min-height: calc(100vh - 150px); /* Adjust for header and footer height */
+    padding-bottom: 50px; /* Extra space for footer */
+}
+
